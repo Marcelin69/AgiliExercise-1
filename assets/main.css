@@ -46,7 +46,16 @@ h1, h2, h3, h4, h5, h6 {
      width: 300px;
      transition: all 400ms ;
 }
-
+.nav_saide{
+    width: 100%;
+   display: flex;
+   flex-direction:column ;
+align-items: baseline;
+padding: 1rem;
+}
+.nav_saide li{
+    line-height: 100px;
+}
 
 
 
@@ -112,6 +121,27 @@ main section { justify-content: center; background-color: var(--moon); }
         width: 80%;
     }
 }
+@media screen and (min-width: 780px) {
+    .sidebar_menu { display: none !important; }
+    .nav_saide {
+        line-height: 80px;
+        text-align: left;
+    }
+    .sidebar {
+        display: none;
+        position: fixed;
+        visibility: hidden;
+        right: 0;
+        height: 100vh;
+        width: 0px;
+        text-align: center;
+        background-color: var(--sun);
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.35);
+        transition: all 400ms ;
+    }
+   
+}
+
 
 /* Flexbox settings *******************************************/
 .flex { display: flex; }
